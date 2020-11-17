@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My shopping list</h1>
+    <div>
+      <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+    <ul></ul>
+    <script type="text/javascript">
+      var lst_html = document.querySelector('ul');
+      var art_html = document.querySelector('input');
+      var btn_html = document.querySelector('button');
+
+
+      btn_html.onclick = function () {
+        var li_html = document.createElement('li');
+        var span_html = document.createElement('span');
+        var buttonsLst_html = document.createElement('button');
+
+
+        li_html.appendChild(span_html);
+        li_html.appendChild(buttonsLst_html);
+
+
+        span.textContent = art;_html.value
+        art_html.value = ‘’;
+        buttonsLst.textContent = 'Delete';
+
+
+        buttonsLst.onclick = function (e) {
+        lst_html.removeChild(li_html);
+        }
+
+
+        // if (span_html.textContent) {
+        //   lst_html.appendChild(li_html);
+        // }
+        art_html.focus();
+        // phrase = “There “;
+        // (lst_html.chhildElementCount > 1) ?phrase += “are “:phrase += “is “;
+        // phrase += lst_html.childElementCount + “ item(s) on the shopping list.”;
+        // alert(phrase);
+      }
+    </script>
+  </body>
+</html>
+
+
+<!-- En live
